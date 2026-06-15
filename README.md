@@ -40,17 +40,12 @@ These behaviours are internal to Create: Deep Seas. Fixing them from an external
 mod would require overriding core CDS systems and risks breaking the sealed-sub
 mechanic itself, so they are intentionally left alone:
 
-1. **Lava surface texture is still visible inside the sub.** CDS hides the *water*
-   surface visually but not lava. This is a CDS rendering matter.
-2. **Trapdoors don't work as climbable "ladders" when below the lava/water level
-   inside the sub.** CDS hides the fluid, and vanilla's trapdoor-climb mechanic
-   depends on a fluid being present, so the climb is disabled. Same effect occurs
-   with water in CDS.
-3. **Fire placed by the player inside the sub causes a fluid-like effect.** Standing
-   in that fire applies slowness and, over lava, burning. This is a CDS interaction.
-4. **Lava or water poured directly inside the sub deals no damage / no drowning.**
-   This is a deliberate CDS feature (the interior is treated as sealed), not a bug.
-5. Mobs and animals inside the submarine still take fire/lava damage. The fix only protects the player. Other entities are not covered — do not keep animals or passive mobs inside a lava-submerged submarine.
+1. **Lava surface texture is still visible inside the sub.** CDS hides the _water_ surface visually but not lava. This is a CDS rendering matter.
+2. **Trapdoors don't work as climbable "ladders" when below the lava/water level inside the sub.** CDS hides the fluid, and vanilla's trapdoor-climb mechanic depends on a fluid being present, so the climb is disabled. Same effect occurs with water in CDS.
+3. **Fire placed by the player inside the sub causes a fluid-like effect.** Standing in that fire applies slowness and, over lava, burning. This is a CDS interaction.
+4. **Lava or water poured directly inside the sub deals no damage / no drowning.** This is a deliberate CDS feature (the interior is treated as sealed), not a bug.
+5. **Mobs and animals inside the submarine still take fire/lava damage.** The fix only protects the player. Other entities are not covered — do not keep animals or passive mobs inside a lava-submerged submarine.
+6. **Animated objects inside the sub (gears, levers, dropped items) appear completely red while the submarine is submerged in lava.** Lava's red ambient light bleeds into CDS's SubLevel renderer and tints everything inside. This is a CDS/Sable rendering issue.
 
 If the Create: Deep Seas authors wish to address any of the above, they are welcome
 to use this code as a starting point.
