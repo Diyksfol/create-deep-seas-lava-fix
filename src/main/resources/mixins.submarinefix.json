@@ -10,6 +10,7 @@
   ],
   "client": [
     "MixinLocalPlayerLavaFix",
+    "MixinLivingEntityRenderer",
     "MixinScreenEffectRenderer"
   ],
   "server": [],
