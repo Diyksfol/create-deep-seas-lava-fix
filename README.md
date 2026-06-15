@@ -80,7 +80,7 @@ This repository contains the **uncompiled source**. To build the jar yourself:
 
 ### Steps
 
-1. Clone this repository.
+1. Clone this repository: https://github.com/Diyksfol/create-deep-seas-lava-fix
 2. Create a `libs/` folder in the project root and place two jars in it:
    - `create_submarine-2.1.6.jar` — from your Create: Deep Seas download.
    - `sable-companion-common-1.21.1-1.5.0.jar` — extracted from the CDS jar's
