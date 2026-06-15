@@ -50,6 +50,7 @@ mechanic itself, so they are intentionally left alone:
    in that fire applies slowness and, over lava, burning. This is a CDS interaction.
 4. **Lava or water poured directly inside the sub deals no damage / no drowning.**
    This is a deliberate CDS feature (the interior is treated as sealed), not a bug.
+5. Mobs and animals inside the submarine still take fire/lava damage. The fix only protects the player. Other entities are not covered — do not keep animals or passive mobs inside a lava-submerged submarine.
 
 If the Create: Deep Seas authors wish to address any of the above, they are welcome
 to use this code as a starting point.
