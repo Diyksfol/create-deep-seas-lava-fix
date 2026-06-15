@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.submarinefix.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "mixins.submarinefix.refmap.json",
+  "mixins": [
+    "MixinEntityLavaFix",
+    "MixinLivingEntityHurtFix"
+  ],
+  "client": [
+    "MixinLocalPlayerLavaFix",
+    "MixinScreenEffectRenderer"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 0
+  }
+}

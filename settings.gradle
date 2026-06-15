@@ -1,0 +1,14 @@
+pluginManagement {
+    repositories {
+        // MDG и NeoForge публикуются здесь
+        maven { url = 'https://maven.neoforged.net/releases' }
+        gradlePluginPortal()
+    }
+}
+
+plugins {
+    // Автоматически скачивает JDK 21 если не найден локально
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.8.0'
+}
+
+rootProject.name = 'submarine-lava-fix'

@@ -1,0 +1,23 @@
+# Gradle
+.gradle/
+build/
+
+# Third-party reference jars — NOT redistributed (see README)
+libs/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.eclipse/
+bin/
+.settings/
+.classpath
+.project
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

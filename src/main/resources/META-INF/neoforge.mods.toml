@@ -1,0 +1,50 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+issueTrackerURL="https://github.com/Diyksfol/create-deep-seas-lava-fix/issues"
+
+[[mods]]
+modId="submarinefix"
+version="1.0.0"
+displayName="Create: Deep Seas - Lava Fix"
+authors="Diyksfol"
+credits="Developed with the help of an AI assistant. Create: Deep Seas by its respective authors."
+description='''
+Fixes the bug in Create: Deep Seas where players inside a hermetically sealed
+submarine still take fire/lava damage while the submarine is submerged in lava,
+even though the interior is correctly emptied of lava.
+
+The fix detects when the player is inside (or climbing out of) a sealed
+compartment and suppresses fire/lava damage and the fire overlay in that case.
+
+Requires Create: Deep Seas. Safe to install without it (the fix simply does nothing).
+
+Some related issues are internal to Create: Deep Seas and cannot be fixed from
+this mod without altering CDS behaviour — see the mod page for details.
+'''
+
+# Mixin configuration
+[[mixins]]
+config="mixins.submarinefix.json"
+
+[[dependencies.submarinefix]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.submarinefix]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.22)"
+ordering="NONE"
+side="BOTH"
+
+# Create Deep Seas is optional — the fix gracefully degrades if absent.
+[[dependencies.submarinefix]]
+modId="create_submarine"
+type="optional"
+versionRange="[2.0,)"
+ordering="AFTER"
+side="BOTH"
