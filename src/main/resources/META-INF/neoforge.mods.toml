@@ -7,6 +7,7 @@ issueTrackerURL="https://github.com/Diyksfol/create-deep-seas-lava-fix/issues"
 modId="submarinefix"
 version="1.0.0"
 displayName="Create: Deep Seas - Lava Fix"
+logoFile="submarinefix.png"
 authors="Diyksfol"
 credits="Developed with the help of an AI assistant. Create: Deep Seas by its respective authors."
 description='''
