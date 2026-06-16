@@ -57,7 +57,7 @@ to use this code as a starting point.
 1. Install [NeoForge](https://neoforged.net/) for Minecraft 1.21.1.
 2. Install [Create: Deep Seas](https://www.curseforge.com/minecraft/mc-mods/create-deep-seas)
    and its dependencies (Create, Sable, etc.).
-3. Drop `submarinefix-1.0.0.jar` into your `mods/` folder.
+3. Drop `submarinefix-1.0.1.jar` into your `mods/` folder.
 4. Launch the game. That's it.
 
 The mod is safe to install even without Create: Deep Seas — it simply does nothing
